@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 540px;
   background-color: var(--bg);
 }
 
@@ -55,19 +55,11 @@ body {
 }
 
 .card-atas {
-  width: 270px;
-  height: 100px;
-  color: black;
-  border-radius: 14px;
-  outline: 1px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-  padding: 12px;
-  margin-top: 45px;
-  overflow: hidden;
-  -webkit-border-radius: 14px;
-  -moz-border-radius: 14px;
-  -ms-border-radius: 14px;
-  -o-border-radius: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 130px;
+  height: 60px;
 }
 
 .gambar-profile {
@@ -127,17 +119,6 @@ body {
   min-height: max-content;
 }
 
-a.btn {
-  background-color: white; /* Warna latar tombol */
-  color: black; /* Warna teks tombol */
-  transition: opacity 0.3s ease; /* Efek transisi */
-}
-
-/* Button */
-a.btn:hover {
-  color: var(--biru);
-}
-
 /* Card */
 /* Layout Kebawah */
 .card-layout {
@@ -148,21 +129,35 @@ a.btn:hover {
   height: 260px;
 }
 
-/* Layout Kesamping */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+/* Layout Kesamping */
 .card {
-  width: 270px;
-  height: 120px;
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 150px;
   background-color: #fff;
   border-radius: 10px;
   outline: 1px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
   padding: 20px;
-  margin-bottom: 20px;
   overflow: hidden;
 }
 
-.gambar-card{
+.kolom-card {
+  margin-left: 24px;
+  margin-bottom: 12px;
+  width: 180px;
+  height: 80px;
+}
+
+.gambar-card {
+  margin-left: 14px;
   width: 100px;
   height: 100px;
   border-radius: 16px;
@@ -172,10 +167,17 @@ a.btn:hover {
   -o-border-radius: 16px;
 }
 
+.card-link{
+  text-decoration: none;
+  color: black;
+}
+
 .card-title {
+  width: 64;
+  text-align: right;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .card-description {
@@ -183,6 +185,7 @@ a.btn:hover {
   line-height: 1.5;
   margin-bottom: 7px;
   user-select: none;
+  margin-top: 0;
 }
 
 .jaraks {
@@ -194,6 +197,9 @@ a.btn:hover {
 }
 
 .kolom {
+  flex: 1;
+  margin: 4px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
