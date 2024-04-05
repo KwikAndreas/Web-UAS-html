@@ -163,6 +163,16 @@ a.btn:hover {
   overflow: hidden;
 }
 
+.gambar-card{
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
 .card-title {
   font-size: 24px;
   font-weight: bold;
