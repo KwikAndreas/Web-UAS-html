@@ -1,0 +1,26 @@
+.navbar {
+  background-color: #25407b;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-title {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}

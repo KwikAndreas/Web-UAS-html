@@ -1,0 +1,218 @@
+:root {
+  --bg: #c3bebef0;
+  --bgt: #c3bebead;
+  --biru: #25407b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+
+.profile {
+  display: flex;
+  width: 1080;
+  height: 240px;
+  justify-content: center;
+}
+
+.div-profile {
+  background-color: white;
+  flex-direction: column;
+  gap: 96;
+  width: 720px;
+  height: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  color: black;
+  border-radius: 14px;
+  padding: 4px;
+  outline: 1px;
+  cursor: not-allowed;
+  align-content: flex-start;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+
+.bag-atas {
+  display: flex;
+  gap: 84px;
+  max-width: 960px;
+  height: 200;
+  flex-direction: row;
+}
+
+.card-atas {
+  width: 270px;
+  height: 100px;
+  background-color: #fff;
+  color: black;
+  border-radius: 14px;
+  outline: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  padding: 12px;
+  margin-top: 45px;
+  overflow: hidden;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+
+.gambar-profile {
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.pp {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+/* Text Sebelah Profile */
+.text-profile {
+  width: 420px;
+  height: 200px;
+  padding-top: 24px;
+  padding-right: 36px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.judul-profile {
+  font-size: 21px;
+}
+
+.desc-profile {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.sosmed {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.ikon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.list {
+  flex-direction: column;
+  justify-content: center;
+  min-height: max-content;
+}
+
+a.btn {
+  background-color: white; /* Warna latar tombol */
+  color: black; /* Warna teks tombol */
+  transition: opacity 0.3s ease; /* Efek transisi */
+}
+
+/* Button */
+a.btn:hover {
+  color: var(--biru);
+}
+
+/* Card */
+/* Layout Kebawah */
+.card-layout {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  width: 960px;
+  height: 260px;
+}
+
+/* Layout Kesamping */
+
+.card {
+  width: 270px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 10px;
+  outline: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  user-select: none;
+}
+
+.jaraks {
+  height: 40px;
+}
+
+.list {
+  display: grid;
+}
+
+.kolom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.samping {
+  gap: 27px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/*Tab*/
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

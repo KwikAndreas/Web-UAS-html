@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #c3bebef0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navigasi {
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 36px;
+}
+
+a.button {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25407b; /* Warna latar tombol */
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+a.button:hover::before,
+a.button:hover::after {
+  background-color: #fff; /* Warna garis saat dihover */
+}
+
+/* Garis pertama */
+a.button::before,
+a.button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #fff; /* Warna garis */
+  transition: all 0.3s ease;
+}
+
+/* Garis kedua */
+a.button::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Garis ketiga */
+a.button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.card {
+  width: 960px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 10px;
+  outline: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  user-select: none;
+}
+
+.content {
+  padding-top: 70px;
+}
+
+.underlined {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.sub-des {
+  margin-bottom: 4px;
+}
+
+.doublesub-des {
+  margin: 4px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.triplesub-des {
+  margin: 4px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+/* Gap */
+.jarak {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.jarak2 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.jaraks {
+  height: 36px;
+}
+
+/* Close */
+.outro {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.ending {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsif */
+/*Laptop*/
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/*Tab*/
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .card {
+    width: 315px;
+  }
+
+  .navbar-title {
+    font-size: 18px;
+  }
+
+  .teks {
+    font-size: 8px;
+    font-weight: bolder;
+  }
+
+  #countdown {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
