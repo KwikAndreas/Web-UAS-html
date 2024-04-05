@@ -78,6 +78,7 @@ a.button::after {
 
 .card {
   width: 960px;
+  height: 120px;
   background-color: #fff;
   border-radius: 10px;
   outline: 1px;
