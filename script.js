@@ -18,10 +18,12 @@ function fetchDataAndRefresh() {
         .then(response => response.json())
         .then(data => {
             updateCircleColor(data);
+            console.log('Berhasil fetch dengan matkul.json')
         })
         .catch(error => {
             console.error('Error, Mencari data:', error);
         });
+        
 }
 
 fetchDataAndRefresh();
