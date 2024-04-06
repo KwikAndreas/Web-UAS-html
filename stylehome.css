@@ -13,10 +13,9 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 760px;
+  min-height: 100vh;
   background-color: var(--bg);
 }
 
@@ -68,6 +67,8 @@ body {
   justify-content: center;
   align-items: center;
   padding-left: 24px;
+  border: 2px solid black;
+  display: inline-block;
 }
 
 .pp {
@@ -114,21 +115,27 @@ body {
 }
 
 .list {
-  width: 960px;
-  height: 560px;
+  width: 1280px;
+  height: 1080px;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  min-height: max-content;
 }
 
 /* Card */
 /* Layout Kebawah */
 .card-layout {
   display: grid;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  width: 960px;
-  height: 260px;
+}
+
+.card-link:hover{
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
 }
 
 .card-container {
@@ -195,7 +202,10 @@ body {
 }
 
 .list {
-  display: grid;
+  margin-top: 48px;
+  padding: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
 .kolom {
@@ -208,6 +218,14 @@ body {
   text-align: center;
 }
 
+.list-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  justify-content: center;
+  gap: 27px;
+}
+/* Dalam Card*/
 .samping {
   gap: 27px;
   display: flex;
@@ -215,20 +233,36 @@ body {
   align-items: center;
 }
 
-@media (max-width: 1366px) {
+a.card:hover {
+  background-color: #fff;
+}
+
+a.card:hover::after{
+  background-color: #bcb1b1eb;
+}
+
+@media screen and (max-width: 1366px) {
   html {
     font-size: 75%;
   }
 }
 
 /*Tab*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 62.5%;
   }
+  
+  .card-layout .list-row {
+    flex-direction: column;
+  }
+  
+  .list .card-layout .list-row{
+    flex-direction: column;
+  }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   html {
     font-size: 55%;
   }

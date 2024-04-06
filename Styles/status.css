@@ -1,26 +1,6 @@
-:root {
-  --hijau: green;
-  --merah: red;
-}
-
-.status-done {
-  position: relative;
-  align-items: flex-start;
+.statusCircle{
   width: 24px;
   height: 24px;
-  background-color: var(--hijau);
-  border-radius: 14px;
-  margin-top: 4px;
-  margin-right: 24px;
-}
-
-.status-none {
-  position: relative;
-  align-items: flex-start;
-  width: 24px;
-  height: 24px;
-  background-color: var(--merah);
-  border-radius: 14px;
-  margin-top: 4px;
-  margin-right: 24px;
+  border-radius: 50%;
+  background-color: red;
 }
