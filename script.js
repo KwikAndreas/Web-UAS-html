@@ -14,7 +14,7 @@ function updateCircleColor(data) {
 }
 
 function fetchDataAndRefresh() {
-    fetch('matkul.json')
+    fetch('https://github.com/KwikAndreas/Web-UAS-html/blob/main/matkul.json')
         .then(response => response.json())
         .then(data => {
             updateCircleColor(data);
